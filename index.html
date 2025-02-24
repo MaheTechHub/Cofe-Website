@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/images/logo2.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- animation link  -->
+    <title>SRUPUT</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/aboutUS.css">
+    <link rel="stylesheet" href="/css/herosection.css">
+    <link rel="stylesheet" href="/css/contect.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <nav>
+            <label for="" class="logo">sruput</label>
+            <div class="navbar">
+                <ul>
+                    <li><a href="/index.html">home</a></li>
+                    <li><a href="#container">about</a></li>
+                    <li><a href="#product">products</a></li>
+                    <li><a href="#conta">contect</a></li>
+                </ul>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-user" id="user" ></i>
+                <i class="fa-sharp fa-solid fa-cart-shopping" id="shopping"></i>
+            <div class="toggle_btn"><i class="fa-solid fa-bars" id="shopping"></i></div>
+            </div>
+        </nav>
+    </header>
+    <div class="toggle">
+        <ul>
+            <li><a href="" onclick="ToggleEvent">home</a></li>
+            <li><a href="#container">about</a></li>
+            <li><a href="#product">products</a></li>
+            <li><a href="#conta">contact</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="shop-container">
+        <div class="shop">
+            <button class="cross-btn">X</button>
+            <h2>Shop Now</h2>
+            <div class="product-list"></div>
+                <button id="bto">Shop Now</button>
+                <button id="bto">See More</button>
+        </div>
+    </div>
+    
+    <div class="login">
+        <i class="fa-solid fa-xmark" id="mark"></i>
+        <form action="">
+            <label for="" id="lab">email</label><br>
+            <input type="email" placeholder="email" class="email"><br>
+            <label for="" id="lab">username</label><br>
+            <input type="username" placeholder="usernamr" class="email"><br>
+            <label for="" id="lab">password</label><br>
+            <input type="password" placeholder="password" class="email"><br>
+            <button id="bto" >login</button>
+            <button id="bto" >register</button>
+        </form>
+    </div>
+    <!-- header end -->
+    <!-- hero section start  -->
+    <div class="hero" data-aos="zoom-in">
+        <div id="index">
+            <h1>A Journey in Every Sip</h1>
+            <h3>Sip the Essence of Perfection</h3>
+            <button id="btn">Shop Now</button>
+            <button id="btn">Explore Our Coffee</button>
+        </div>
+    </div>
+    <!-- hero section end  -->
+     <!-- about section start  -->
+    <div class="container">
+        <h1>about us</h1>
+        <div class="about" data-aos="fade-right" data-aos-duration="1000">
+            <div class="s1">
+                <img src="/images/new.webp" alt="">
+                <h6>support@akcoffee.com</h6>
+            </div>
+            <div class="s2">
+                <p id="head" data-aos="fade-left">
+                    Welcome to [Your Company Name], where passion meets perfection in every sip. Our journey began with
+                    a
+                    simple love for coffee and a desire to share that love with the world. From the highest quality
+                    beans
+                    sourced from the best farms around the globe to the meticulous roasting process, we ensure that
+                    every
+                    cup of coffee you enjoy is a testament to our commitment to excellence. At [Your Company Name], we
+                    believe that coffee is not just a beverage, but an experience that brings people together, sparks
+                    creativity, and fuels dreams. Join us on this journey and savor the essence of perfection with every
+                    sip.
+                </p>
+                <button id="btn">shop now</button>
+                <button id="btn">leran more</button>
+            </div>
+        </div>
+    </div>
+    <!-- about section end  -->
+    <!-- product start -->
+    <div class="con" data-aos="fade-up">
+        <h1>products</h1>
+        <div id="product">
+            <div class="p1" data-aos="fade-left">
+                <div id="box">
+                    <div class="co"><i class="fa-regular fa-heart" id="heart"></i><i class="fa-solid fa-cart-shopping" onclick="addToCart('Taste Temptations', '/images/pro1.webp', 'Infused with delightful flavors like vanilla, hazelnut, or caramel.')" id="cart"></i></div>
+                    <img src="/images/pro1.webp" alt="coffee" >
+                    <h3>Taste Temptations</h3>
+                    <strong>Infused with delightful flavors like vanilla, hazelnut, or caramel.</strong>
+                </div>
+                <div id="box">
+                    <div class="co"><i class="fa-regular fa-heart" id="heart"></i><i class="fa-solid fa-cart-shopping" onclick="addToCart('Taste Temptations', '/images/pro1.webp', 'Infused with delightful flavors like vanilla, hazelnut, or caramel.')" id="cart"></i></div>
+                    <img src="/images/pro1.webp" alt="coffee" height="200px">
+                    <h3>Nature's Brew</h3>
+                    <strong>100% organic beans grown without pesticides or chemicals.</strong>
+                </div>
+                <div id="box">
+                    <div class="co"><i class="fa-regular fa-heart" id="heart"></i><i class="fa-solid fa-cart-shopping" onclick="addToCart('Taste Temptations', '/images/pro1.webp', 'Infused with delightful flavors like vanilla, hazelnut, or caramel.')" id="cart"></i></div>
+                    <img src="/images/pro1.webp" alt="coffee" height="200px">
+                    <h3>Bright & Bold</h3>
+                    <strong>Lightly roasted for a bright flavor and higher acidity.</strong>
+                </div>
+                <div id="box" class="hide">
+                    <div class="co"><i class="fa-regular fa-heart" id="heart"></i><i class="fa-solid fa-cart-shopping" onclick="addToCart('Taste Temptations', '/images/pro1.webp', 'Infused with delightful flavors like vanilla, hazelnut, or caramel.')" id="cart"></i></div>
+                    <img src="/images/pro1.webp" alt="coffee" height="200px">
+                    <h3>Deep Richness</h3>
+                    <strong>Bold and robust flavor profile with a dark finish.</strong>
+                </div>
+                <div id="box" class="hide">
+                    <div class="co"><i class="fa-regular fa-heart" id="heart"></i><i class="fa-solid fa-cart-shopping" onclick="addToCart('Taste Temptations', '/images/pro1.webp', 'Infused with delightful flavors like vanilla, hazelnut, or caramel.')" id="cart"></i></div>
+                    <img src="/images/pro1.webp" alt="coffee" height="200px">
+                    <h3>Nitro Buzz</h3>
+                    <strong>Smooth, creamy cold brew infused with nitrogen for a unique texture.</strong>
+                </div>
+                <div id="box" class="hide">
+                    <div class="co"><i class="fa-regular fa-heart" id="heart"></i><i class="fa-solid fa-cart-shopping" onclick="addToCart('Taste Temptations', '/images/pro1.webp', 'Infused with delightful flavors like vanilla, hazelnut, or caramel.')" id="cart"></i></div>
+                    <img src="/images/pro1.webp" alt="coffee" height="200px">
+                    <h3>Pure Origins</h3>
+                    <strong>Sourced from specific regions known for their unique flavors.</strong>
+                </div>
+            </div><br>
+            <div class="p2" data-aos="fade-right">
+                <div id="box">
+                    <div class="co"><i class="fa-regular fa-heart" id="heart"></i><i class="fa-solid fa-cart-shopping" onclick="addToCart('Taste Temptations', '/images/pro1.webp', 'Infused with delightful flavors like vanilla, hazelnut, or caramel.')" id="cart"></i></div>
+                    <img src="/images/pro1.webp" alt="coffee" height="200px">
+                    <h3>Fusion Brews</h3>
+                    <strong> A blend of various beans for a balanced flavor profile.</strong>
+                </div>
+                <div id="box">
+                    <div class="co"><i class="fa-regular fa-heart" id="heart"></i><i class="fa-solid fa-cart-shopping" onclick="addToCart('Taste Temptations', '/images/pro1.webp', 'Infused with delightful flavors like vanilla, hazelnut, or caramel.')" id="cart"></i></div>
+                    <img src="/images/pro1.webp" alt="coffee" height="200px">
+                    <h3>Espresso Elegance</h3>
+                    <strong>Perfectly roasted beans for rich espresso shots.</strong>
+                </div>
+                <div id="box">
+                    <div class="co"><i class="fa-regular fa-heart" id="heart"></i><i class="fa-solid fa-cart-shopping" onclick="addToCart('Taste Temptations', '/images/pro1.webp', 'Infused with delightful flavors like vanilla, hazelnut, or caramel.')" id="cart"></i></div>
+                    <img src="/images/pro1.webp" alt="coffee" height="200px">
+                    <h3>Chill Brew</h3>
+                    <strong>Smooth and refreshing cold brew coffee.</strong>
+                </div>
+                <div id="box" class="hide">
+                    <div class="co"><i class="fa-regular fa-heart" id="heart"></i><i class="fa-solid fa-cart-shopping" onclick="addToCart('Taste Temptations', '/images/pro1.webp', 'Infused with delightful flavors like vanilla, hazelnut, or caramel.')" id="cart"></i></div>
+                    <img src="/images/pro1.webp" alt="coffee" height="200px">
+                    <h3>Decaf Delight</h3>
+                    <strong>Full flavor without the caffeine kick.</strong>
+                </div>
+                <div id="box" class="hide">
+                    <div class="co"><i class="fa-regular fa-heart" id="heart"></i><i class="fa-solid fa-cart-shopping" onclick="addToCart('Taste Temptations', '/images/pro1.webp', 'Infused with delightful flavors like vanilla, hazelnut, or caramel.')" id="cart"></i></div>
+                    <img src="/images/pro1.webp" alt="coffee" height="200px">
+                    <h3>Irish Bliss</h3>
+                    <strong>A classic mix of coffee, Irish whiskey, and cream for a warming treat.</strong>
+                </div>
+                <div id="box" class="hide">
+                    <div class="co"><i class="fa-regular fa-heart" id="heart"></i><i class="fa-solid fa-cart-shopping" onclick="addToCart('Taste Temptations', '/images/pro1.webp', 'Infused with delightful flavors like vanilla, hazelnut, or caramel.')" id="cart"></i></div>
+                    <img src="/images/pro1.webp" alt="coffee" height="200px">
+                    <h3>Affogato Delight</h3>
+                    <strong>A scoop of vanilla ice cream topped with a shot of hot espresso.</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product end -->
+    <!-- contectus start -->
+    <div class="conta">
+        <h1>contect us</h1>
+        <div class="contai">
+            <div class="map" data-aos="zoom-out" >
+                <p><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7232.33866346743!2d67.072221!3d24.994361500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1721001880573!5m2!1sen!2s"
+                        id="ma" width="900" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+            <div class="form" data-aos="zoom-in" >
+                <form action="" class="call">
+                    <label for="" id="lab">email</label><br>
+                    <input type="email" placeholder="email" class="email"><br>
+                    <label for="" id="lab">message</label><br>
+                    <!-- <input type="text" placeholder="msg.." class="msg"><br> -->
+                     <textarea name="" class="msg" placeholder="your massage"></textarea><br>
+                    <input type="submit" value="submit" id="button">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- contectus end-->
+    <!-- footer start  -->
+    <div class="cennect">
+        <div class="footer"><br><br>
+            <hr>
+                <div class="foot">
+                        <div class="link" data-aos="slide-up" id="f1">
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Gift Cards</a></li>
+                            <li><a href="">Loyalty Program</a></li>
+                        </div><br>
+                        <div class="li" data-aos="slide-up">
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">Our Products</a></li>
+                            <li><a href="">Shipping Information</a></li>
+                        </div><br>
+                        <div class="l" data-aos="slide-up" id="f2">
+                            <li><a href="">Return Policy</a></li>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">New Arrivals</a></li>
+                        </div><br>
+                        <div class="lin" data-aos="slide-up">
+                            <li><a href="">support@akcoffee.com</a></li>
+                            <li><a href="">+92 300 1234567</a></li>
+                            <li><a href="">123 Coffee Lane, City, Country</a></li>
+                        </div>
+                </div>
+                <div class="ico">
+                    <i class="fa-brands fa-facebook-f" id="fb"></i>
+                    <i class="fa-brands fa-instagram" id="insta"></i>
+                    <i class="fa-brands fa-twitter" id="twiter"></i>
+                </div>
+            </div><br><br>
+            <hr id="bottom">
+        </div>
+    </div>
+    <!-- footer end  -->
+    <script src="/javascript/java.js"></script>
+    <script src="/javascript/product.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 250
+      });
+    </script>
+</body>
+
+</html>

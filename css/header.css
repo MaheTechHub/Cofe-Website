@@ -1,0 +1,258 @@
+body{
+    background-color: black;
+    color: #FFF8E1;
+    overflow-x: hidden;
+    /* align-items: center; */
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #F0E5D8;
+}
+a {
+    color: #F0E5D8;
+}
+.icon {
+    color: #481E14;
+    cursor: pointer;
+}
+/* .icon :hover {
+    color: #F0E5D8;
+} */
+.highlight {
+    background-color: #F0E5D8;
+    color: #4B3832;
+}
+a:hover {
+    color: #FFF8E1;
+}
+/* navbar css start */
+.logo{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    font-size: 60px;
+}
+.navbar ul li {
+    display: inline-block;
+    line-height: 64px;
+    margin: 0 10px;
+}
+.navbar ul li a {
+    color: aliceblue;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 30px;
+}
+
+a.active, a:hover {
+    background: #6F4E37;
+    transition: .5s;
+}
+nav{
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.icon{
+    font-size: 26px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 250px;
+}
+#user, #shopping{
+    margin-right: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: #F0E5D8;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.toggle{
+    /* height: 300px; */
+    width: 800px;
+    padding: 5rem;
+    position: fixed;
+    z-index: 10;
+    background-color: black;
+    border-radius: 10px;
+    transition:all 3s;
+    display: none;
+}
+.toggle li{
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.toggle_btn{
+    display: none;
+}
+ /* shop start  */
+ .shop
+{
+    background-color: #481E14;
+    width: 500px;
+    height: 900px;
+    /* float: inline-end; */
+    position: absolute;
+    z-index: 10;
+    display: none;
+    float: right;
+    top: 0;
+}
+.cross-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cross-btn:hover {
+    background-color: darkred;
+}
+.shop-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    align-items: center; /* Vertically centers the items if required */
+    margin-top: 50px; /* Optional: Adjust the space from the top */
+}
+
+
+.shop h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.shop-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-shop {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+.btn-shop:hover {
+    background-color: #cc5200;
+}
+
+.shop .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shop .product {
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.shop .product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.shop .delete-btn {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.shop .delete-btn:hover {
+    background-color: darkred;
+}
+
+
+ /* shop end  */
+/* login start  */
+.login{
+    padding: 5rem;
+    margin: 5rem;
+    position: fixed;
+    z-index: 10;
+    background-color: black;
+    border-radius: 10px;
+    left: 550px;
+    display: none;
+    transition: calc(-50%);
+
+}
+#mark{
+    font-size: 25px;
+    float: inline-end;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+#bto{
+    background-color: #A67B5B;
+    color: #000000;
+    border: 3px solid #D2B48C;
+    padding: 20px 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2rem;
+}
+#bto:hover{
+    background-color: #D2B48C;
+}
+/* login end  */
+/* responsive start  */
+@media (max-width:920px){
+    .navbar{
+        display: none;
+    }
+    .toggle_btn{
+        display: block;
+    }
+    .toggle{
+        display: none;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    #user, #shopping{
+        height: 30px;
+        width: 30px;
+    }
+    .icon{
+        font-size: 18px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+}

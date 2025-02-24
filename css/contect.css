@@ -1,0 +1,82 @@
+.contai{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.conta{
+    background-image: url(/images/pexels-adam-lukac-254247-773958.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#lab{
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 50px;
+}
+.email{
+    height: 50px;
+    width: 400px;
+    border: 3px solid white;
+    background: transparent;
+    /* border-radius: 100px; */
+    color: aliceblue;
+    font-size: 20px;
+    /* float: right; */
+}
+.msg{
+    height: 90px;
+    width: 400px;
+    border: 3px solid white;
+    background: transparent;
+    /* border-radius: 100px; */
+    color : aliceblue;
+    font-size : 20px;
+    /* float: right; */
+}
+.call{
+    height: 350px;
+    /* background-color: blue; */
+    line-height: 50px;
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+}
+#button{
+    background-color: #A67B5B;
+    color: #000000;
+    border: 3px solid #D2B48C;
+    padding: 15px 170px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#button:hover {
+    background-color: #D2B48C;
+}
+/* responsive start  */
+@media (max-width:920px){
+    .contai{
+        display: block;
+    }
+    .email{
+        width: 300px;
+    }
+    .msg{
+        width: 300px;
+    }
+    #button{
+        padding: 10px 125px;
+        margin-top: 15px;
+    }
+    .map{
+        width: 50px;
+    }
+    .conta{
+        height: 900px;
+        margin-top: 200px;
+    }
+}
+/* responsive end  */

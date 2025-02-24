@@ -1,0 +1,60 @@
+/* hero css start */
+.hero {
+    position: relative; /* For positioning the overlay */
+    background-image: url('/images/pexels-lood-goosen-508841-1235717.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF; /* Ensures text is visible on dark background */
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Place it below the content */
+}
+#index {
+    position: relative; /* For content to be above the overlay */
+    z-index: 2; /* Place content above the overlay */
+}
+#index h1 {
+    font-size: 6em;
+    margin-bottom: 0.5em;
+}
+#index h3 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+#btn {
+    background-color: #A67B5B;
+    color: #000000;
+    border: 3px solid #D2B48C;
+    padding: 20px 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#btn:hover {
+    background-color: #D2B48C;
+}
+@media (max-width:920px){
+    #index h1 {
+        font-size: 3em;
+    }
+    #index h3 {
+        font-size: 1.5em;
+        margin-bottom: 2em;
+    }
+}
